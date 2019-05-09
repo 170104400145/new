@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <project name="project" default="default"> 
+    <target name="default" depends="depends" description="description"> 
+        <javac srcdir="src" destdir="bin" includes="org/**"  includeantruntime="true"></javac> 
+         <jar basedir="bin" destfile="dist/ant_project.jar"></jar> 
+    </target> 
+    <target name="depends"> 
+    </target> 
+	<target name="test" depends="run">
+	</target>
+ </project>
